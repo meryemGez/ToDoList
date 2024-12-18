@@ -78,9 +78,15 @@ public class ToDoList implements Serializable { //io kütüphanesini serileştir
                         System.out.println((i + 1) + ". " + gorevler.get(i).toString());
                     }
                     int gorevNo = scanner.nextInt();
+                    scanner.nextLine();//amk buranın
                     if(gorevNo > 0 && gorevNo <= gorevler.size()) {
+                        System.out.println("Görev tamamlandı mı? (Evet/Hayır)");
+                        String durum=scanner.nextLine();
+                        boolean yenidurum= durum.equalsIgnoreCase("Evet");
                         gorevler.get(gorevNo - 1).settertamamlandı(true);
-                        System.out.println("Tamamlanan göreviniz işaretlendi!");
+                        System.out.println("Görevininiz durumu değiştirildi!");
+                    }else{
+                        System.out.println("Geçersiz görev numarası");
                     }
                     break;
 
