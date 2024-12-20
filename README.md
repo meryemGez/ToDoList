@@ -1,4 +1,4 @@
-TO DO LİST PROGRAMM
+TO DO LİST 
 
 Bu program, kullanıcıların yapılacaklar listesini yönetmelerine olanak tanır. 
 Görev ekleme, silme, güncelleme ve tamamlanmış olarak işaretleme gibi özellikler sunar.
